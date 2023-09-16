@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Malaysia Culture</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class = "bgimage">
+    <div class="top_container sub_pages">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="about.html">
+                        <img src="images/malaysialogo.png" alt="">
+
+                        <span>Malaysia Culture</span>
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="anniversary.html"> Anniversary</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="food.html"> Food </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="game.html">Traditional Game </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">contact us </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="contact_section layout_padding">
+        <div class="container">
+
+            <h2 class="main-heading">
+                Feedback
+            </h2>
+
+            <p class="text-center">
+                If you have any question need to ask us or have any information that need to add in.<br>
+                We are welcome and encourage your valueble feedback.
+            </p>
+            <div class="">
+                <div class="contact_section-container">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="contact-form">
+                                <form action="" id="myForm">
+                                    <label for="name">Name:</label>
+                                    <div>
+                                        <input type="text" placeholder="Name" id="name" required>
+                                    </div>
+                                    <label for="phonenumber">Phone Number:</label>
+                                    <div>
+                                        <input type="tel" placeholder="XXX-XXXXXXX" id="phonenumber"
+                                            pattern="\d{3}-\d{7,8}" required>
+                                    </div>
+                                    <label for="email">Email:</label>
+                                    <div>
+                                        <input type="email" placeholder="xxx@xxxxx.com" id="email" required>
+                                    </div>
+                                    <label for="message">Message:</label>
+                                    <div>
+                                        <input type="text" placeholder="Message" class="input_message" id="message"
+                                            required>
+                                    </div>
+                                    <div class="satisfaction-section">
+                                        <label>Satisfaction About Our Website</label>
+                                        <div class="radio-group">
+                                            <label for="unacceptable" class="radio-inline"> <input type="radio"
+                                                    name="Satisfaction" id="unacceptable"> Unacceptable</label>
+
+
+                                            <!-- Add a line break to move to the next line -->
+                                            <label for="improvement" class="radio-inline"><input type="radio"
+                                                    name="Satisfaction" id="improvement"> Needs Improvement </label>
+
+
+                                            <!-- Add a line break to move to the next line -->
+                                            <label for="satisfactory" class="radio-inline"><input type="radio"
+                                                    name="Satisfaction" id="satisfactory"> Satisfactory</label>
+
+
+                                            <!-- Add a line break to move to the next line -->
+                                            <label for="good" class="radio-inline"><input type="radio"
+                                                    name="Satisfaction" id="good"> Good</label>
+
+
+                                            <!-- Add a line break to move to the next line -->
+                                            <label for="excellent" class="radio-inline"><input type="radio"
+                                                    name="Satisfaction" id="excellent"> Excellent</label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn_on-hover" value="submit">
+                                            Send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            // Get a reference to the form element
+            const form = $('#myForm');
+
+            // Add a submit event listener to the form
+            form.submit(function (e) {
+                e.preventDefault(); // Prevent the form from submitting
+
+                // Get the form values
+                const name = $('#name').val();
+                const phoneNumber = $('#phonenumber').val();
+                const email = $('#email').val();
+                const message = $('#message').val();
+                const satisfaction = $('input[name="Satisfaction"]:checked').val();
+
+                // Create an object to store the form data
+                const formData = {
+                    name,
+                    phoneNumber,
+                    email,
+                    message,
+                    satisfaction,
+                };
+
+                // Store the form data in local storage as JSON
+                localStorage.setItem('formData', JSON.stringify(formData));
+
+                // Optionally, you can display a confirmation message
+                alert('Form data has been saved to local storage.');
+
+                // Reset the form
+                form[0].reset();
+            });
+        });
+    </script>
+
+
+    <section class="container-fluid footer_section">
+        <p>
+            If you have any problem & questions.
+            <br>
+            Please contact us:
+            <a href="mailto:jia.dowell@gmail.com"> Email /</a>
+            <a href="tel:017-4312199">Phone Number</a>
+        </p>
+    </section>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

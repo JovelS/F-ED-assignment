@@ -1,0 +1,121 @@
+.background-section {
+    background-image: url(../images/background_game1.jpg);
+    /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+    /* Add padding to space out content from the background */
+    text-align: center;
+    /* Center the content within the background section */
+    color: black;
+    /* Set text color to be visible on the background */
+}
+.Game_row{
+    display: flex;
+    height: 100%;
+    align-items:center;
+}
+.Game_col{
+    flex-basis:50%;
+}
+.Game_col h1{
+    color:#fff;
+    font-size:70px;
+}
+.Game_col h2{
+    color:#fff;
+    font-size:40px;
+}
+.Game_col h3{
+    color:#fff;
+}
+.Game_col button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background:skyblue;
+    border: 0;
+    border-radius: 20px; 
+    outline: none;
+    margin-top: 30px;
+}
+.Game_col p{
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    display:none;
+}
+.Game{
+    width:180px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.5s;
+}
+.Game1 {
+    background-image: url(../images/five-stones-featurewm.jpg);
+}
+.Game2{
+    background-image: url(../images/GalahPanjang1.jpeg);
+}
+.Game3{
+    background-image: url(../images/Congkak1.png);
+}
+.Game4{
+    background-image: url(../images/Gasing2.png);
+}
+.Game5{
+    background-image: url(../images/Guli2.jpg);
+}
+.Game6{
+    background-image: url(../images/Wau2.jpg);
+}
+.Game:hover{
+    transform:translateY(-10px);
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
+.text-center h1{
+    text-decoration-line: underline;
+    font-size: 100px;
+    color: skyblue;
+}
+#Tdgame{
+    background-image: url(../images/background_game2.jpg);
+    background-size: 100%;
+}
+section h2{
+    color: darkcyan;
+    text-decoration-line: underline;
+    font-size: 60px;
+}
+section p{
+    font-size: 18px;
+}

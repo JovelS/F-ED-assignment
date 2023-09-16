@@ -1,0 +1,136 @@
+.header-text {
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.header-text h1 {
+    animation: colorChange 5s infinite;
+    /* Change the color to your desired hover color */
+
+    /* Style the text within the text box */
+    .text-box p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+/* Define the color change animation */
+@keyframes colorChange {
+    0% {
+        color: red;
+        /* Start with red */
+    }
+
+    25% {
+        color: blue;
+        /* Change to blue after 25% of the animation */
+    }
+
+    50% {
+        color: green;
+        /* Change to green after 50% of the animation */
+    }
+
+    75% {
+        color: black;
+        /* Change to black after 75% of the animation */
+    }
+
+    100% {
+        color: red;
+        /* End with red */
+    }
+}
+
+.background-section {
+    background-image: url(../images/Malaysia.jpg);
+    /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+    /* Add padding to space out content from the background */
+    text-align: center;
+    /* Center the content within the background section */
+    color: black;
+    /* Set text color to be visible on the background */
+}
+
+/* Define the hover effect for the button */
+.btn:hover {
+    background-color: red;
+    /* Change this color to your desired hover color */
+    color: white;
+    /* Optionally, change the text color when hovering */
+}
+
+.food_image {
+    width: 100%;
+    /* Set the desired width */
+    height: 230px;
+    /* Maintain aspect ratio */
+    max-height: 300px;
+    /*Set the maximum height (adjust as needed) */
+}
+
+.food_button {
+    cursor: pointer;
+}
+
+/* Define the CSS style for the video container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* 100% of the viewport height */
+}
+
+/* Style the embedded iframe */
+.video-container iframe {
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 800px;
+    /* Set a maximum width if desired */
+    height: 500px;
+    /* Maintain the video's aspect ratio */
+}
+
+/* Style the heading with the custom font */
+h1 {
+    font-family: 'Comic Sans MS', cursive;
+    /* Apply the custom font */
+    font-size: 36px;
+    /* Adjust the font size */
+    text-align: center;
+    /* Center the text */
+}
+
+pre {
+    font-size: 16px;
+}
+
+/* Back to Top button styles */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
